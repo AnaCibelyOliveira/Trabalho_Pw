@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Trabalho de PW</title>
+</head>
+
+<body>
+  <!-- botão topo -->
+  <button onclick="topFunction()" id="myBtn" title="Ir para o topo">Voltar</button>
+
+<script>
+// pegar botão
+var mybutton = document.getElementById("myBtn");
+
+// quando rolar a página 20px do topo para baixo, o botão será exibido
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// quando clicar no botão, a página rola para o topo do documento
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  <!-- fim do botão -->
+
+  <!-- modal -->
+    <div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- fim da modal -->
+
+<!-- Inicio do site -->
+
+<!-- inicio da navbar -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="comeco">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Alessa Patrícia</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        16 anos, estudante e téc. informática
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Abrir a segunda modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Ana Cibely</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        16 anos, estudante e téc. informática
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Voltar para a primeira</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">ALECIB</button>
+<!-- fim da modal --></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#fim">Rodapé</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Canais">Canais</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquise" aria-label="Pesquise">
+        <button class="btn btn-outline-success" type="submit">Ir</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- fim da navbar -->
+
+<!-- inicio slide show -->
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imgs/bre.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/ob.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/vis.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/friends.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- fim do slide show -->
+<p></p>
+<!-- inicio do grid -->
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col">
+      <img src="imgs/lucifer.png" class="img-fluid d-block zoom">
+     </div>
+
+    <div class="col">
+      <img src="imgs/bomdia.png"   class="zoom">
+    </div>
+
+    <div class="col">
+      <img src="imgs/elite.png"   class="zoom">
+    </div>
+
+    <div class="col">
+       <img src="imgs/dark.png"  class="zoom"> 
+    </div>
+  </div>
+<p></p>
+  <div class="row ">
+
+    <div class="col" id="5n">
+      <img src="imgs/carly.jpg" width="300" height="170" class="zoom">
+     </div>
+
+    <div class="col" id="6n">
+      <img src="imgs/the100.jpg" width="300" height="170" class="zoom">
+    </div>
+
+    <div class="col" id="7n">
+      <img src="imgs/pll.jpg" width="300"  class="zoom">
+    </div>
+
+    <div class="col" id="8n">
+       <img src="imgs/strangert.jpg" width="300" class="zoom">
+    </div>
+  </div>
+</div>
+<!-- fim do grid -->
+  
+<!-- inicio da tabela -->
+  
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Top 3</th>
+      <th scope="col">Temporadas</th>
+      <th scope="col">Empresa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Friends</td>
+      <td>10</td>
+      <td>HBO</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>ELITE</td>
+      <td>6</td>
+      <td>Netflix</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Lucifer</td>
+      <td>6</td>
+      <td>Netflix</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- fim da tabela -->
+
+<!-- inicio do card -->
+  <div class="container text-center" id="Canais">
+  <div class="row">
+
+    <div class="col">
+
+      <div class="card" style="width: 18rem;">
+  <img src="imgs/net.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Netflix é um serviço online de streaming norte-americano de vídeo sob demanda por assinatura lançado em 2010</p>
+  </div>
+</div>
+
+     </div>
+
+    <div class="col">
+      
+      <div class="card" style="width: 18rem;">
+  <img src="imgs/prime.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Prime Video é um serviço online de streaming norte-americano de vídeo sob demanda por assinatura lançado em 2006</p>
+  </div>
+</div>
+
+    </div>
+
+    <div class="col">
+
+      <div class="card" style="width: 18rem;">
+  <img src="imgs/hbo.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Home Box Office é um rede de televisão por assinatura estadunidense, de propriedade da Warner Bros. Discovery</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+<!-- fim do card -->
+
+<!-- inicio do formulario -->
+<form>
+  <div class="mb-3" id="login">
+    <label for="exampleInputEmail1" class="form-label"> Endereço de Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Não compartilhe seus dados com ninguém nunca!.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Senha</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Confirmar</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+  <!-- fim do formulario -->
+
+<!-- Fim do site -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<footer class="bg-dark text-light" id="fim">
+    <div class="container-fluid py-3">
+    <div class="row">
+      <div class="col-4">
+        <ul class="nav flex-column">
+          <li class="nav-link"><a href="#comeco">Início</a></li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <p>
+            Para você que não sabe o que assistir, ou algo novo para conhecer. O ALECIB te proporciona informações de qualidades e veridicas
+        </p>
+        <ul class="nav">
+          <li class="nav-link" ><i class="fab fa-facebook fa-3x "></i></li>
+          <li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li>
+          <li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li>
+          <li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="text-center" style="background-color: #333; padding: 20px;" >
+      &copy 2023 Alessa e Cibely
+    </div>
+  </footer>
+
+</body>
+</html>
